@@ -23,4 +23,9 @@ public class Processor {
     public void setGigahertz(String gigahertz) {
         this.gigahertz = gigahertz;
     }
+    @Override
+    public String toString(){
+        return "Generation :"+generation+"\n"
+                +"Gigahertz :"+gigahertz;
+    }
 }

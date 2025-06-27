@@ -19,6 +19,8 @@ public class ShapeCalculator {
         shapes.add(c);
         shapes.add(r);
         shapes.add(t);
-        shapes.stream().forEach(s -> System.out.println("Calculate Area"+ s.calculateArea()+" "+"Calculate Perimeter "+s.calculatePerimeter()));
+
+        shapes.forEach(s -> System.out.println(s.getClass().getSimpleName()+
+                "\n"+" Area "+ s.calculateArea()+" "+"Perimeter "+s.calculatePerimeter()));
         }
 }

@@ -23,4 +23,9 @@ public class Hardisk {
     public void setType(String type) {
         this.type = type;
     }
+    @Override
+    public String toString(){
+        return "Size :"+size+"\n"
+        +"Type :"+type;
+    }
 }

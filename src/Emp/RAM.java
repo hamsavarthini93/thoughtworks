@@ -23,4 +23,9 @@ public class RAM {
     public void setGeneration(String generation) {
         this.generation = generation;
     }
+    @Override
+    public String toString(){
+        return "Size :"+size+"\n"
+                +"Generation :"+generation;
+    }
 }
